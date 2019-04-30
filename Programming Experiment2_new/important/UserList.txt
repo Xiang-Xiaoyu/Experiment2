@@ -1,0 +1,5 @@
+user1 njucs1
+user2 njucs2
+user3 njucs3
+user4 njucs4
+user5 njucs5

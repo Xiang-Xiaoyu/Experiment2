@@ -1,0 +1,14 @@
+AvailableAdmission:
+user2 ==> user1
+user2 ==> user1
+user2 ==> user3
+user2 ==> user4
+user2 ==> user5
+DeleteAdmission:
+user2 ==> user1
+user1 ==> user3
+user3 ==> user4
+user4 ==> user5
+DropAdmission:
+InsertAdmission:
+SelectAdmission:

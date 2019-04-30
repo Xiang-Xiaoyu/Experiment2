@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{981A65C0-C40D-4979-BEED-C37BBF2B3263}</ProjectGuid>
-    <RootNamespace>ProgrammingExperiment2</RootNamespace>
+    <ProjectGuid>{08C197AC-A112-466E-B917-7CF53929B89F}</ProjectGuid>
+    <RootNamespace>ProgrammingExperiment2new</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,6 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="mySQL.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Legal.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mySQL.cpp" />
+    <ClCompile Include="Table.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
