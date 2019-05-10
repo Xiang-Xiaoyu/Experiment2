@@ -1,0 +1,8 @@
+name number location
+PKU 1 Beijing
+QSU 2 Beijing
+FDU 3 Shanghai
+SJU 4 Shanghai
+NJU 5 Nanjing
+ZJU 4 Zhejiang
+

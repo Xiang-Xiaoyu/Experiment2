@@ -10,9 +10,16 @@
 #include<cctype>
 #include<algorithm>
 #include<iomanip>
+#define AVAILABLE 0
+#define DELETE 1
+#define DROP 2
+#define INSERT 3
+#define SELECT 4
+#define GAP 10
+//GAP表示多少条有效命令进行一次同步
 using namespace std;
 
-const string AdmissionName[5] = { "AvailableAdmission:","DeleteAdmission:","DropAdmission:","InsertAdmission:","SelectAdmission:" };
+const string AdmissionName[5] = { "AVAILABLE","DELETE","DROP","INSERT","SELECT" };
 
 struct apply
 {
@@ -21,6 +28,7 @@ struct apply
 	string admit;
 	string admitted;
 	string time;
+	string information;
 };
 
 struct Admission
@@ -40,6 +48,7 @@ private:
 	vector<string> ColumnName;
 	vector<vector<string>> vec;
 	vector<Admission*> admission;
+	vector<int> MultikeywordSortIndex;//用于多关键词排序的关键词下标
 public:
 	int GetColumn()const { return column; }
 	int GetRow()const { return row; }

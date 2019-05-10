@@ -1,0 +1,25 @@
+CREATE TABLE Teacher2 FROM Teacher.txt
+CREATE TABLE Dormitory (name, number, location) TO Dormitory.txt
+DROP TABLE Dormitory
+TABLE LIST
+INSERT INTO University VALUES (NJU, 5, Nanjing)
+INSERT INTO University (name, location) VALUES (ZJU, Zhejiang)
+DELETE FROM University WHERE name = NJU
+DELETE * FROM University
+SELECT (name, location) FROM University
+SELECT * FROM University
+SELECT DISTINCT 学号, 专业 FROM Student
+
+SELECT * FROM Student ORDER BY 学号, 专业 ASC
+SELECT * FROM Student ORDER BY 学号, 专业 DESC
+
+SELECT 学号, 姓名 FROM Student WHERE 专业 = 计算机科学与技术
+SELECT 学号, 姓名 FROM Student TO Student_new.txt
+
+GRANT AVAILABLE, DELETE, INSERT ON Student, Teacher TO user1, user3
+GRANT AVAILABLE, DELETE, INSERT, DROP, SELECT ON Student, Teacher, University TO user1, user3, user4, user5
+
+REVOKE AVAILABLE, DELETE, INSERT ON Student, Teacher FROM user1, user2, user3, user4
+REVOKE AVAILABLE, DELETE, INSERT, DROP, SELECT ON Student, Teacher, University FROM user1, user3, user4
+
+APPLY SELECT ON Student FROM user2
